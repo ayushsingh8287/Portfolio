@@ -1,0 +1,170 @@
+/* Reset + Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  scroll-behavior: smooth;
+
+  background-image: url('jeremy-bishop-G9i_plbfDgk-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.logo .brand-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #38bdf8;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-size: 1.5vw;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #38bdf8;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 30vw;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  color: #f87171;
+}
+
+.hero-text h2 {
+  font-size: 3rem;
+  margin-top: 10px;
+  color: #e2e8f0;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+.hero-image img {
+  width: 450px;
+  margin-bottom: 5rem;
+  height: auto;
+  border-radius: 200px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Info Sections */
+.info-section {
+  padding: 60px 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 40px auto;
+  max-width: 900px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 30px;
+  font-size: 2rem;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #38bdf8;
+}
+.linkdin-icon{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-top: 30px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}
