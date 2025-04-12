@@ -60,17 +60,17 @@ margin-left: 6vw;
 
 @media (max-width:600px) {
   .logo h1{
-    font-size: 8vw;
+    font-size: 7vw;
     color: aquamarine;
   }
   .nav-text a{
     font-size: 3vw;
   }
 .nav-text{
-  /* visibility: hidden; */
+  margin-top: 2vw;
 }
 #main-container{
-  margin-top: 50vw;
+  margin-top: 10vw;
   display:block;
 }
 .profile-box h2{
@@ -88,7 +88,7 @@ margin-left: 6vw;
   margin-top: 4vw;
 }
 .Click{
-  margin:10vw 0 0 32vw;
+  margin:10vw 0 0 35vw;
   width: 30vw;
   height: 3vh;
   border-radius: 2vw;
