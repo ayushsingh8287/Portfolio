@@ -1,170 +1,104 @@
-/* Reset + Base Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+margin: 0;
+padding: 0;
+}
+body{
+   background-image: url(jeremy-bishop-G9i_plbfDgk-unsplash.jpg); 
 }
 
-html, body {
-  min-height: 100%;
-  font-family: 'Segoe UI', sans-serif;
+.nav-bar{
+  display: flex;
+  justify-content: space-between;
+}
+.logo h1{
+  font-size: 4vw;
   color: white;
-  scroll-behavior: smooth;
-
-  background-image: url('jeremy-bishop-G9i_plbfDgk-unsplash.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-/* Navbar */
-.navbar {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px 40px;
+} 
+.nav-text{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  margin-top: 1vw;
+  list-style:none;
 }
-
-.logo .brand-title {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #38bdf8;
-  letter-spacing: 1px;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-}
-
-.nav-links li a {
-  color: #38bdf8;
+.nav-text a{
+  margin-right: 4vw;
   text-decoration: none;
-  font-size: 1.5vw;
-  transition: color 0.3s ease;
+  color: white;
+  
 }
+/* navigation bar text complete */
 
-.nav-links li a:hover {
-  color: #38bdf8;
-}
-
-/* Hero Section */
-.hero-section {
-  position: relative;
-  height: 100vh;
+#main-container{
+  margin-top: 10vw;
   display: flex;
-  align-items: center;
-  justify-content: center;
+}
+.profile-box h2{
+  color:white;
+  margin-left: 10vw;
+  font-size: 5vw;
+}
+.profile-box h3{
+color:white;
+margin-left: 6vw;
+  font-size: 9vw;
+}
+.profile-box h4{
+  color:white;
+  margin-top: 5vw;
+  text-align: center;
+  font-size: larger;
+}
+.Click{
+  visibility: hidden;
+}
+.image-box img{
+  width: 40vw;
+  border-radius: 20vw;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 1;
-}
 
-.hero-content {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  max-width: 1200px;
-  padding: 10px;
-  flex-wrap: wrap;
-}
 
-.hero-text {
-  max-width: 30vw;
-}
 
-.hero-text h1 {
-  font-size: 4rem;
-  color: #f87171;
+@media (max-width:600px) {
+  .logo h1{
+    font-size: 8vw;
+    color: aquamarine;
+  }
+  .nav-text a{
+    font-size: 3vw;
+  }
+.nav-text{
+  /* visibility: hidden; */
 }
-
-.hero-text h2 {
-  font-size: 3rem;
-  margin-top: 10px;
-  color: #e2e8f0;
+#main-container{
+  margin-top: 50vw;
+  display:block;
 }
-
-.hero-text p {
-  font-size: 1.2rem;
-  margin-top: 20px;
-  line-height: 1.6;
-  color: #cbd5e1;
-}
-
-.hero-image img {
-  width: 450px;
-  margin-bottom: 5rem;
-  height: auto;
-  border-radius: 200px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s ease;
-}
-
-.hero-image img:hover {
-  transform: scale(1.05);
-}
-
-/* Info Sections */
-.info-section {
-  padding: 60px 20px;
-  background-color: rgba(0, 0, 0, 0.6);
-  margin: 40px auto;
-  max-width: 900px;
-  border-radius: 16px;
+.profile-box h2{
+  font-size: 7vw;
   text-align: center;
 }
-
-/* Social Icons */
-.social-icons {
-  display: flex;
-  gap: 30px;
-  font-size: 2rem;
-  justify-content: center;
-  margin-top: 20px;
+.profile-box h3{
+  font-size: 15vw;
+  text-align: center;
 }
-
-.social-icons a {
+.profile-box h4{
   color: white;
-  transition: color 0.3s ease;
+  font-size:5vw ;
+  text-align: center;
+  margin-top: 4vw;
 }
-
-.social-icons a:hover {
-  color: #38bdf8;
+.Click{
+  margin:10vw 0 0 32vw;
+  width: 30vw;
+  height: 3vh;
+  border-radius: 2vw;
+  background-color: aqua;
+  visibility: visible;
 }
-.linkdin-icon{
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+.image-box img{
+  margin-left: 10vw;
+  margin-top: 5vw;
+  border-radius: 10vw;
+  width: 80vw;
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .hero-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-image {
-    margin-top: 30px;
-  }
-
-  .nav-links {
-    display: none;
-  }
-}
+/* using max-width  */
